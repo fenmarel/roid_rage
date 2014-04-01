@@ -12,5 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require keymaster
+//= require helpers
+//= require moving_object
+//= require asteroid
+//= require ship
+//= require bullet
+//= require game
 //= require_tree .

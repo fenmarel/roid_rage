@@ -1,0 +1,15 @@
+<%= javascript_include_tag "application" %>
+
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+    var canvas = document.createElement('canvas');
+    canvas.width = Asteroids.Game.DIMX;
+    canvas.height = Asteroids.Game.DIMY;
+    canvas.id = 'canvas';
+
+    var c = canvas.getContext('2d');
+    document.body.appendChild(canvas);
+
+    new Asteroids.Game(c).start();
+  });
+</script>
